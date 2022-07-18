@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:campusacademy_app/screens/forgot_password_screen.dart';
 import 'package:lottie/lottie.dart';
 
-class SignupScreen extends StatelessWidget {
-  const SignupScreen({Key? key}) : super(key: key);
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,31 +15,14 @@ class SignupScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 15, right: 15, bottom: 15),
             child: Column(
               children: <Widget>[
-                LottieBuilder.asset(
-                  "assets/animations/make-the-deal.json",
-                  height: 200,
-                  width: 200,
-                ),
+                LottieBuilder.asset("assets/animations/user-profile.json"),
                 Container(
                   alignment: Alignment.topCenter,
                   child: const Text(
-                    "Sign Up",
+                    "Sign In",
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w600,
-                      color: Color.fromARGB(255, 25, 146, 246),
-                    ),
-                  ),
-                ),
-                const TextField(
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                    labelText: "Full Name",
-                    icon: Icon(
-                      Icons.account_circle_rounded,
-                      color: Color.fromARGB(255, 25, 146, 246),
-                    ),
-                    labelStyle: TextStyle(
                       color: Color.fromARGB(255, 25, 146, 246),
                     ),
                   ),
@@ -49,19 +33,6 @@ class SignupScreen extends StatelessWidget {
                     labelText: "Email Address",
                     icon: Icon(
                       Icons.email,
-                      color: Color.fromARGB(255, 25, 146, 246),
-                    ),
-                    labelStyle: TextStyle(
-                      color: Color.fromARGB(255, 25, 146, 246),
-                    ),
-                  ),
-                ),
-                const TextField(
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                    labelText: "Phone Number",
-                    icon: Icon(
-                      Icons.phone,
                       color: Color.fromARGB(255, 25, 146, 246),
                     ),
                     labelStyle: TextStyle(
@@ -84,24 +55,21 @@ class SignupScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  alignment: Alignment.topLeft,
-                  margin: const EdgeInsets.all(10),
-                  child: RichText(
-                    text: const TextSpan(
-                      children: [
-                        TextSpan(
-                          text: "By signing up you agree to our ",
-                          style: TextStyle(
-                            color: Color(0xFF5C5C5C),
-                          ),
+                  alignment: Alignment.topRight,
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ForgotPasswordScreen(),
                         ),
-                        TextSpan(
-                          text: "Terms & Conditions",
-                          style: TextStyle(
-                            color: Color(0xFF461EF7),
-                          ),
-                        ),
-                      ],
+                      );
+                    },
+                    child: const Text(
+                      "Forgot Password?",
+                      style: TextStyle(
+                        color: Color(0xFF6E50F5),
+                      ),
                     ),
                   ),
                 ),
@@ -114,7 +82,7 @@ class SignupScreen extends StatelessWidget {
                   color: const Color.fromARGB(255, 25, 146, 246),
                   textColor: Colors.white,
                   child: const Text(
-                    "Sign Up",
+                    "Sign In",
                   ),
                 ),
               ],

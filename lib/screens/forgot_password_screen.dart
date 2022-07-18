@@ -21,13 +21,13 @@ class ForgotPasswordScreen extends StatelessWidget {
                   height: 20,
                 ),
                 Container(
-                  alignment: Alignment.topLeft,
+                  alignment: Alignment.topCenter,
                   child: const Text(
                     "Forgot Password?",
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xff7174d0),
+                      color: Color.fromARGB(255, 25, 146, 246),
                     ),
                   ),
                 ),
@@ -36,7 +36,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                   child: TextButton(
                     onPressed: () {},
                     child: const Text(
-                      "Don't worry! It happens. Please enter the mobile number linked to your account",
+                      "Please enter your email address linked to your account.",
                       style: TextStyle(
                         color: Color(0xFF5C5C5C),
                       ),
@@ -44,15 +44,15 @@ class ForgotPasswordScreen extends StatelessWidget {
                   ),
                 ),
                 const TextField(
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
-                    labelText: "Mobile Number",
+                    labelText: "Email",
                     icon: Icon(
-                      Icons.phone,
-                      color: Color(0xff999dec),
+                      Icons.email,
+                      color: Color.fromARGB(255, 25, 146, 246),
                     ),
                     labelStyle: TextStyle(
-                      color: Color(0xff999dec),
+                      color: Color.fromARGB(255, 25, 146, 246),
                     ),
                   ),
                 ),
@@ -72,7 +72,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  color: const Color(0xff8572e8),
+                  color: const Color.fromARGB(255, 25, 146, 246),
                   textColor: Colors.white,
                   child: const Text(
                     "Get OTP",
