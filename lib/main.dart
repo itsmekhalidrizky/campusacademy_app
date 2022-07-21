@@ -1,8 +1,6 @@
 import 'package:campusacademy_app/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-// ignore: unused_import
-import 'package:campusacademy_app/screens/screen.dart';
 
 void main() {
   runApp(const CampusAcademyApp());

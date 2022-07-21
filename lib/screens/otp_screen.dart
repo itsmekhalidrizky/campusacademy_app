@@ -36,7 +36,7 @@ class OtpScreen extends StatelessWidget {
                   child: TextButton(
                     onPressed: () {},
                     child: const Text(
-                      "A 4 digit code has been sent to your mobile number",
+                      "A 6 digit code has been sent to your email",
                       style: TextStyle(
                         color: Color(0xFF5C5C5C),
                       ),

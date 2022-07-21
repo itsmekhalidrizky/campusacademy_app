@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:campusacademy_app/constants.dart';
 import 'package:campusacademy_app/screens/screen.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -19,8 +18,8 @@ class WelcomePage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const Align(
+                  children: const [
+                    Align(
                       alignment: Alignment.center,
                       child: SizedBox(
                         child: Image(
@@ -30,14 +29,6 @@ class WelcomePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.8,
-                      child: const Text(
-                        "Bring together your files, your tools, project and people.Including a new mobile and desktop application.",
-                        style: kBodyText,
-                        textAlign: TextAlign.center,
-                      ),
-                    )
                   ],
                 ),
               ),
