@@ -27,7 +27,7 @@ class OtpScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xff7174d0),
+                      color: Color.fromARGB(255, 25, 146, 246),
                     ),
                   ),
                 ),
@@ -49,10 +49,10 @@ class OtpScreen extends StatelessWidget {
                     labelText: "OTP",
                     icon: Icon(
                       Icons.password,
-                      color: Color(0xff999dec),
+                      color: Color.fromARGB(255, 25, 146, 246),
                     ),
                     labelStyle: TextStyle(
-                      color: Color(0xff999dec),
+                      color: Color.fromARGB(255, 25, 146, 246),
                     ),
                   ),
                 ),
@@ -72,7 +72,7 @@ class OtpScreen extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  color: const Color(0xff8572e8),
+                  color: const Color.fromARGB(255, 25, 146, 246),
                   textColor: Colors.white,
                   child: const Text(
                     "Change Password",

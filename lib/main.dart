@@ -22,9 +22,7 @@ class CampusAcademyApp extends StatelessWidget {
           ),
           backgroundColor: Colors.white,
           shadowColor: Colors.white,
-          iconTheme: IconThemeData(
-            color: Color.fromARGB(255, 25, 146, 246),
-          ),
+          iconTheme: IconThemeData(color: Color.fromARGB(252, 7, 46, 79)),
         ),
       ),
       home: const SplashScreenPage(),
