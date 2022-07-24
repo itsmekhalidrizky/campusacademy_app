@@ -1,3 +1,5 @@
+import 'package:campusacademy_app/screens/homepage.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:campusacademy_app/screens/forgot_password_screen.dart';
 import 'package:lottie/lottie.dart';
@@ -75,7 +77,13 @@ class LoginScreen extends StatelessWidget {
                 ),
                 MaterialButton(
                   minWidth: MediaQuery.of(context).size.width,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => const HomePage(),
+                        ));
+                  },
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(13),
                   ),
