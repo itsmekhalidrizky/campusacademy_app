@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "236623578466",
+    "project_id": "campus-academy-8728b",
+    "storage_bucket": "campus-academy-8728b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236623578466:android:5759ee2a26fe6613f4983b",
+        "android_client_info": {
+          "package_name": "com.example.campusacademy_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236623578466-qfkcvrqbd0noeuq46goo8gomrraopn4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.campusacademy_app",
+            "certificate_hash": "ce7f211767a4d173f7a4efb8364e4eb96befe36b"
+          }
+        },
+        {
+          "client_id": "236623578466-ohkfo2njjc31frgg6nbl7d0jbtu5jiub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5_c2WeYwwhz3Dtio63ckkXcu3s-HjZOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236623578466-ohkfo2njjc31frgg6nbl7d0jbtu5jiub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
